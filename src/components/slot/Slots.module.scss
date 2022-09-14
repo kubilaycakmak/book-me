@@ -1,0 +1,11 @@
+.slots {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 24px 32px;
+  //   align-items: flex-start;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

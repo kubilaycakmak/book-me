@@ -1,0 +1,26 @@
+.cube {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+}
+.selectedCube {
+  border: 10px solid black;
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+  background: blue !important;
+}
+
+.slot {
+  height: 340px;
+  width: 200px;
+  margin: 0 16px;
+}
+p {
+  &:first-child {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 6px 0;
+  }
+}
