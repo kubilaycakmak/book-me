@@ -5,11 +5,21 @@
   border-radius: 4px;
 }
 .selectedCube {
-  border: 10px solid black;
   width: 200px;
   height: 200px;
   border-radius: 4px;
-  background: blue !important;
+  background: rgba(105, 105, 252, 0.577) !important;
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+  }
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
 }
 
 .slot {
@@ -17,10 +27,35 @@
   width: 200px;
   margin: 0 16px;
 }
-p {
+
+.title {
+  color: #a4a9ad;
   &:first-child {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 6px 0;
   }
+}
+
+.activeTitle {
+  color: white;
+  background: #20a39e !important;
+  &:first-child {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 6px 0;
+  }
+}
+
+.name {
+  color: #a4a9ad;
+}
+.activeName {
+  color: white;
+}
+.defaultBg {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #a4a9ad76;
 }

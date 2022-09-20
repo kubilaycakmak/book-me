@@ -1,13 +1,22 @@
 import React from "react";
 import styles from "./Slot.module.scss";
-const Slot = ({ id, avatar, text, onClickHandler, selected }) => {
+import unselected from "../../image/question.png";
+
+const Slot = ({ id, avatar, text, onClickHandler, selected, slot }) => {
   return (
     <div className={styles.slot} onClick={() => onClickHandler(id)}>
-      <p>Slot {id + 1}</p>
-      <div className={selected ? styles.selectedCube : styles.cube}>
-        {avatar == "" ? <h3>empty</h3> : <img src={avatar}></img>}
+      <p className={selected == id ? styles.activeTitle : styles.title}>
+        Slot {slot}
+      </p>
+      <div className={selected == id ? styles.selectedCube : styles.cube}>
+        {avatar == "" ? (
+          // <img className={styles.avatar} src={unselected} />
+          <div className={styles.defaultBg}></div>
+        ) : (
+          <img className={styles.avatar} src={avatar}></img>
+        )}
       </div>
-      <p>{text}</p>
+      <p className={selected == id ? styles.activeName : styles.name}>{text}</p>
     </div>
   );
 };
