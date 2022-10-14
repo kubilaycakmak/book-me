@@ -1,0 +1,84 @@
+.card{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    width: 150px;
+    height: 220px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    &:hover{
+        cursor: pointer;
+    }
+    
+}
+.focusedCard{
+    border-radius: 4px;
+    width: 150px;
+    height: 150px;
+    margin-right: 24px;
+    // margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 255, 0.3);
+    color: white;
+}
+.outer{
+    // border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    padding: 0 48px;
+}
+.settings{
+    font-size: 24px;
+    font-weight: 600;
+    position: absolute;
+    right: 16px;
+    top: 12px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    button{
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        background-color: white;
+        // margin-bottom: 4px;
+        margin: 4px 12px;
+    }
+}
+
+.optionButton{
+    // border: 20px solid black;
+    border-radius: 4px;
+    &:hover{
+        background-color: rgba(0, 0, 255, 0.2) !important;
+    }
+}
+
+.message{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    width: 450px;
+    margin: auto auto;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: white !important;
+}
+
+.title{
+    // border: 1px solid rgba(0, 0, 0, 0.12);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -29,7 +29,7 @@
 }
 
 .title {
-  color: #a4a9ad;
+  color: rgba(0, 0, 0, 0.8);
   &:first-child {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -48,10 +48,12 @@
 }
 
 .name {
-  color: #a4a9ad;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 12px;
 }
 .activeName {
-  color: white;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 12px;
 }
 .defaultBg {
   width: 100%;
