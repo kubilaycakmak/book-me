@@ -16,7 +16,7 @@ const SelectClassSingle = ({ _id, title }) => {
 
   const resetSlots = (id) => {
     console.log("reset");
-    axios.delete("http://localhost:5001/classroom/reset/" + id).then((res) => {
+    axios.delete(`${process.env.REACT_APP_BACKEND_URL}/classroom/reset/${id}`).then((res) => {
             console.log(res);
             setMessage("Slots reset successfully");
         }).catch((err) => {
@@ -25,7 +25,7 @@ const SelectClassSingle = ({ _id, title }) => {
   }
 
   const deleteClassById = (id) => {
-    axios.delete("http://localhost:5001/classroom/delete/" + id).then((res) => {
+    axios.delete(`${process.env.REACT_APP_BACKEND_URL}/classroom/delete/${id}`).then((res) => {
             console.log(res);
             window.location.reload();
             setMessage("Class deleted successfully");

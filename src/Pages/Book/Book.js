@@ -28,7 +28,7 @@ const Book = () => {
     const onSubmitHandlerButton = () => {
       if (name && slot >= 0) {
         axios
-          .post("http://localhost:5001/classroom/slots", {
+          .post(`${process.env.REACT_APP_BACKEND_URL}/classroom/slots`, {
             id,
             name: name,
             slot: slot + 1,
@@ -45,7 +45,7 @@ const Book = () => {
     };
     const getBookById = (id) => {
       axios
-        .get(`http://localhost:5001/classroom/slots/${id}`)
+        .get(`${process.env.REACT_APP_BACKEND_URL}/classroom/slots/${id}`)
         .then((res) => {
           let tmp = generateNewObjectArray(res.data.classroom.seat);
           mergeArrays(tmp, res.data.slots);
